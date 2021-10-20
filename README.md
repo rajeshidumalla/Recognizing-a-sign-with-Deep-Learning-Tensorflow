@@ -38,7 +38,7 @@ Now that we have imported the library, we will walk through its different applic
 
 <img src="/images/formula.png" style="width:400px;height:100px;"><caption><center> <u><font color='purple'></u><font color='purple'><br><font color='black'></center>
     
-# 2 - Building neural network in tensorflow
+# Building neural network in tensorflow
 
 In this part of the taskn I will build a neural network using tensorflow. Remember that there are two parts to implement a tensorflow model:
 
