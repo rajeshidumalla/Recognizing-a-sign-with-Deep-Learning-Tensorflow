@@ -36,7 +36,7 @@ np.random.seed(1)
 
 Now that we have imported the library, we will walk through its different applications. We will start with an example, where we compute the loss of one training example.
 
-<img src="/images/formula.png" style="width:400px;height:100px;"><caption><center> <u><font color='purple'> **Figure 1**</u><font color='purple'>: SIGNS dataset <br> <font color='black'> </center>
+<img src="/images/formula.png" style="width:400px;height:100px;"><caption><center> <u><font color='purple'></u><font color='purple'><br><font color='black'></center>
     
 # 2 - Building neural network in tensorflow
 
