@@ -34,10 +34,10 @@ np.random.seed(1)
     non-resource variables are not supported in the long term
 
 
-Now that we have imported the library, we will walk through its different applications. We will start with an example, where we compute the loss of one training example. 
-$$loss = \mathcal{L}(\hat{y}, y) = (\hat y^{(i)} - y^{(i)})^2 \tag{1}$$
-Screen Shot 2021-10-20 at 5.57.04 pm.png
-<img src="/images/hands.png" style="width:800px;height:350px;"><caption><center> <u><font color='purple'> **Figure 1**</u><font color='purple'>: SIGNS dataset <br> <font color='black'> </center>
+Now that we have imported the library, we will walk through its different applications. We will start with an example, where we compute the loss of one training example.
+
+<img src="/images/formula.png" style="width:400px;height:100px;"><caption><center> <u><font color='purple'> **Figure 1**</u><font color='purple'>: SIGNS dataset <br> <font color='black'> </center>
+    
 # 2 - Building neural network in tensorflow
 
 In this part of the taskn I will build a neural network using tensorflow. Remember that there are two parts to implement a tensorflow model:
