@@ -56,7 +56,7 @@ This dataset teach our computers to decipher sign language. The datset is about 
 Note that this is a subset of the SIGNS dataset. The complete dataset contains many more signs.
 
 Here are examples for each number, and how an explanation of how I represent the labels. These are the original pictures, before I lowered the image resolutoion to 64 by 64 pixels.
-<img src="hands.png" style="width:800px;height:350px;"><caption><center> <u><font color='purple'> **Figure 1**</u><font color='purple'>: SIGNS dataset <br> <font color='black'> </center>
+<img src="/images/hands.png" style="width:800px;height:350px;"><caption><center> <u><font color='purple'> **Figure 1**</u><font color='purple'>: SIGNS dataset <br> <font color='black'> </center>
 
 
 Run the following code to load the dataset.
@@ -99,7 +99,7 @@ print ("y = " + str(np.squeeze(Y_train_orig[:, index])))
 
 
     
-![png](output_6_1.png)
+![png](/images/output_6_1.png)
     
 
 
@@ -547,7 +547,7 @@ parameters = model(X_train, Y_train, X_test, Y_test)
 
 
     
-![png](output_29_1.png)
+![png](/images/output_29_1.png)
     
 
 
@@ -591,36 +591,14 @@ my_image = cv2.resize(image, dsize=(64,64)).reshape((1, 64*64*3)).T
 y_image_prediction = predict(my_image, parameters)
 
 plt.imshow(image)
-print("the algorithm predicts: y = " + str(np.squeeze(my_image_prediction)))
+print("The algorithm predicts: y = " + str(np.squeeze(my_image_prediction)))
 ```
 
-
-    ---------------------------------------------------------------------------
-
-    AttributeError                            Traceback (most recent call last)
-
-    <ipython-input-15-add5cacffda8> in <module>
-         14 my_image = cv2.resize(image, dsize=(64,64)).reshape((1, 64*64*3)).T
-         15 #my_image = resize(image, reshape((1, 64*64*3))).T
-    ---> 16 y_image_prediction = predict(my_image, parameters)
-         17 
-         18 plt.imshow(image)
-
-
-    ~/tf_utils.py in predict(X, parameters)
-         84               "b3": b3}
-         85 
-    ---> 86     x = tf.compat.v1.tf.compat.v1.create_placeholders("float", [12288, 1])
-         87 
-         88     z3 = forward_propagation_for_predict(x, params)
-
-
-    AttributeError: module 'tensorflow.compat.v1' has no attribute 'tf'
-
+The algorithm predicts: y = 2
 
 
     
-![png](output_32_1.png)
+![png](/images/output_32_1.png)
     
 
 
